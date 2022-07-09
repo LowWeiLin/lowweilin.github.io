@@ -1,0 +1,10 @@
+<div>
+    <ul class="sidebar-ul">
+        {%- for platform in site.sidebar %}
+        <li class="sidebar-li">
+            <a class="sidebar-a" href="{{ platform.link }}">{{ platform.icon }}&nbsp;{{
+                platform.name }}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+</div>
